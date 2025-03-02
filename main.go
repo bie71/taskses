@@ -18,5 +18,7 @@ func main() {
 	r.PUT("/buku/:id", controllers.PerbaruiBuku(db))
 	r.DELETE("/buku/:id", controllers.HapusBuku(db))
 
+	r.Static("/static", "./static")
+
 	r.Run(":8080")
 }
