@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update User</title>
+    <script src="/static/js/script.js"></script>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <h2>Update Profil</h2>
+    
+    <form id="updateForm">
+        <input type="text" id="new-username" placeholder="Username Baru" required>
+        <input type="password" id="new-password" placeholder="Password Baru" required>
+        <input type="password" id="old-password" placeholder="Password Lama" required>
+        <button type="button" id="update-btn" onclick="updateUser()">Update</button>
+    </form>
+
+    <p  id="btn-home"><a href="/">Kembali ke Beranda</a></p>
+
+</body>
+</html>

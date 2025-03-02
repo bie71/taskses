@@ -17,7 +17,12 @@ func InitDB() *gorm.DB {
 
 	// Cek apakah tabel sudah ada sebelum migrasi
 	if err := db.AutoMigrate(&models.Book{}); err != nil {
-		log.Fatal("Gagal melakukan migrasi:", err)
+		log.Fatal("Gagal melakukan migrasi buku:", err)
 	}
+
+	if err := db.AutoMigrate(&models.User{}); err != nil {
+		log.Fatal("Gagal melakukan migrasi user:", err)
+	}
+
 	return db
 }
